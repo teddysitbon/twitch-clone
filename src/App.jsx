@@ -1,12 +1,13 @@
-import './App.css';
-import { LOCALE } from './constants/locale.js';
+import './App.scss';
+import Header from './components/common/Header';
 import React from 'react';
-
+import Sidebar from './components/common/Sidebar';
 
 function App () {
     return (
-        <div className="App">
-            {LOCALE.HEADER}
+        <div>
+            <Header />
+            <Sidebar />
         </div>
     );
 }

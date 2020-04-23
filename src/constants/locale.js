@@ -1,3 +1,11 @@
 export const LOCALE = {
-    HEADER: 'Hello Word',
+    HEADER: {
+        LOGO: 'Twitch',
+        TOP_GAMES: 'Top Games',
+        TOP_STREAMS: 'Top Streams',
+        SEARCH: 'Rechercher'
+    },
+    SIDEBAR: {
+        TITLE: 'Chaines recommandees'
+    }
 };
