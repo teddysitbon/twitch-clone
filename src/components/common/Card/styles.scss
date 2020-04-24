@@ -1,0 +1,62 @@
+@import '../../../global.scss';
+
+.card{
+    position: relative;
+    margin: 0 20px 20px 0;
+    max-width: 187px;
+    &-title{
+        padding-top: 10px;
+        font-weight: bold;
+        &:hover{
+            color: $color-violet;
+        }
+    }
+    &-border{
+        cursor: pointer;
+        height: 242px;
+        width: 182px;
+        background-color: $color-violet;
+        position: relative;
+        &:after,
+        &:before{
+            transition: all 0.2s;
+        }
+        &:hover{
+            &:after{
+                content: '';
+                top: -5px;
+                left: 0px;
+                position: absolute;
+                transform-origin: left center;
+                width: 0px;
+                height: 0px;
+                border-top: 5px solid transparent;
+                border-right: 5px solid $color-violet;
+            }
+            &:before{
+                content: '';
+                bottom: 0px;
+                right: -5px;
+                position: absolute;
+                transform-origin: left center;
+                width: 0px;
+                height: 0px;
+                border-right: 5px solid transparent;
+                border-top: 5px solid $color-violet;
+            }
+            .card-img{
+                top: -5px;
+                right: -5px;
+            }
+        }
+    }
+    &-img{
+        transition: all 0.1s;
+        height: 242px;
+        width: 182px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        z-index: 10;
+    }
+}

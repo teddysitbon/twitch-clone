@@ -1,4 +1,7 @@
 export const LOCALE = {
+    GAMES: {
+        TITLE: 'Jeux les plus populaires',
+    },
     HEADER: {
         LOGO: 'Twitch',
         TOP_GAMES: 'Top Games',
@@ -7,5 +10,8 @@ export const LOCALE = {
     },
     SIDEBAR: {
         TITLE: 'Chaines recommandees'
+    },
+    BUTTON: {
+        WATCH: 'Regarder'
     }
 };

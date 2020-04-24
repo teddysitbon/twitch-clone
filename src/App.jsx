@@ -1,4 +1,5 @@
 import './App.scss';
+import Games from './components/games';
 import Header from './components/common/Header';
 import React from 'react';
 import Sidebar from './components/common/Sidebar';
@@ -8,6 +9,7 @@ function App () {
         <div>
             <Header />
             <Sidebar />
+            <Games />
         </div>
     );
 }
