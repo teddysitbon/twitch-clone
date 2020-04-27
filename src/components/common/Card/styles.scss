@@ -19,7 +19,7 @@
         position: relative;
         &:after,
         &:before{
-            transition: all 0.2s;
+            transition-delay: 0.1s;
         }
         &:hover{
             &:after{
@@ -51,7 +51,7 @@
         }
     }
     &-img{
-        transition: all 0.1s;
+        //transition: all 0.1s;
         height: 242px;
         width: 182px;
         position: relative;

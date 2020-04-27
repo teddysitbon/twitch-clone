@@ -1,0 +1,50 @@
+@import '../../../global.scss';
+
+.streamer{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover{
+        background: $color-grey-hover;
+    }
+    &-border{
+        width: 30px;
+        height: 30px;
+        .streamer-img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    &-infos{
+        font-size: 12px;
+        flex-basis: 50%;
+        max-width: 50%;
+        text-align: left;
+        .streamer-login{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .game-name{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &-viewers{
+        font-size: 12px;
+        &:before{
+            content: '';
+            display: inline-flex;
+            margin-right: 5px;
+            width: 8px;
+            height: 8px;
+            background-color: $color-red;
+            border-radius: 50%;
+        }
+    }
+}

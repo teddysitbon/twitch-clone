@@ -10,7 +10,12 @@ const API = axios.create({
 export function getTopGames () {
     return API.get('https://api.twitch.tv/helix/games/top');
 }
-
-export function getGames () {
-    return API.get('https://api.twitch.tv/helix/games/top');
+export function getTopStreams (nbMax) {
+    return API.get(`https://api.twitch.tv/helix/streams?first=${nbMax}`);
+}
+export function getGames (query) {
+    return API.get(`https://api.twitch.tv/helix/games?${query}`);
+}
+export function getUsers (query) {
+    return API.get(`https://api.twitch.tv/helix/users?${query}`);
 }

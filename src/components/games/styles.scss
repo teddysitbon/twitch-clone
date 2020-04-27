@@ -3,11 +3,11 @@ main{
     margin-top: 50px;
     margin-left: 240px;
     right: 0;
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
 }
 
 .games{
-    padding: 50px 40px;
+    padding: 40px;
     &-title{
         margin-top: 0px;
     }

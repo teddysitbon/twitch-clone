@@ -2,6 +2,9 @@ export const LOCALE = {
     GAMES: {
         TITLE: 'Jeux les plus populaires',
     },
+    STREAMS: {
+        TITLE: 'Streams les plus populaires',
+    },
     HEADER: {
         LOGO: 'Twitch',
         TOP_GAMES: 'Top Games',
